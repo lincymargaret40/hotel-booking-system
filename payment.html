@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+<div class="card shadow p-4">
+
+<h3>Payment Page</h3>
+
+<p><b>Name:</b> {{booking[1]}}</p>
+<p><b>Room:</b> {{booking[2]}}</p>
+
+<form action="/success">
+
+<label>Card Number</label>
+<input type="text" class="form-control mb-3" required>
+
+<label>Expiry</label>
+<input type="text" class="form-control mb-3" required>
+
+<label>CVV</label>
+<input type="text" class="form-control mb-3" required>
+
+<button class="btn btn-success">Pay Now</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
